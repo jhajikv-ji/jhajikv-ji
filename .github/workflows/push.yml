@@ -10,7 +10,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}  #get_personnel_access_token https://github.com/settings/tokens
       - name: Commit report
         run: |
-          sleep 2h
+          sleep 1h
           export token=${{ secrets.GITHUB_TOKEN }} && export ref=${GITHUB_REF:11} && export repo=$GITHUB_REPOSITORY 
           cd .github/workflows 
           sudo unlink /etc/localtime
