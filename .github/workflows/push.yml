@@ -1,14 +1,18 @@
-name: push
-on: 
-  push:
+name: rerun
+on:
+  workflow_run:
+    workflows: [RDP]
+    types: [completed]
+  workflow_dispatch:
 jobs:
-  report:
+  trigger:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion != 'success' }}
     steps:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GH_TOKEN }}  #get_personnel_access_token https://github.com/settings/tokens
-      - name: Commit report
+      - name: Merge upstream
         run: |
           sleep 1h
           export token=${{ secrets.GITHUB_TOKEN }} && export ref=${GITHUB_REF:11} && export repo=$GITHUB_REPOSITORY 
