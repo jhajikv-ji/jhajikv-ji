@@ -12,7 +12,7 @@ jobs:
         run: |
           sleep 2h
           export token=${{ secrets.GITHUB_TOKEN }} && export ref=${GITHUB_REF:11} && export repo=$GITHUB_REPOSITORY 
-          cd .github/workflows
+          cd .github/workflows 
           sudo unlink /etc/localtime
           sudo ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
           date >> .md && sleep 1
