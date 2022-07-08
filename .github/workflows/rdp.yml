@@ -9,4 +9,4 @@ jobs:
       - name: 
         run: |
               curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/newguac.sh | sudo bash &
-              sleep 2h && sleep 4m
+              sleep 2h && sleep 4m 
