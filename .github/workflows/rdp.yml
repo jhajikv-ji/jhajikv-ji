@@ -10,7 +10,7 @@ jobs:
       - name: 
         run: |
               curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/newguac.sh | sudo bash &
-              sleep 1h && sleep 7m 15s
+              sleep 1h && sleep 7m && sleep 15s
   trigger:
     runs-on: ubuntu-latest
     steps:
