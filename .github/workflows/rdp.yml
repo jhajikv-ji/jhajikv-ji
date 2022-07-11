@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  5555:
+  P5555:
     runs-on: ubuntu-latest
     steps:     
       - name: 
@@ -14,7 +14,7 @@ jobs:
               wget -O lull https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/expect.sh && cat lull >> finale.sh && rm lull
               sudo bash finale.sh 
                                                
-  8888:
+  P8888:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,7 +29,7 @@ jobs:
           
 
 
-  7787:
+  P7787:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -47,7 +47,7 @@ jobs:
 
 
 
-  5678:
+  P5678:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -64,7 +64,7 @@ jobs:
 
 
 
-  6666:
+  P6666:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
