@@ -1,0 +1,15 @@
+name: run
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:     
+      - name: 
+        run: |
+              curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/tty.sh | sudo bash 
+              
+                                               
+  
