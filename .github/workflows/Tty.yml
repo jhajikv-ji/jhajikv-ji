@@ -1,4 +1,4 @@
-name: run
+name: RDP
 on:
   push:
   workflow_dispatch:
@@ -9,7 +9,8 @@ jobs:
     steps:     
       - name: 
         run: |
-              curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/tty.sh | sudo bash 
+             printf "root\nroot" | sudo passwd root && printf "root" | su - root -c "  \
+             curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/tty.sh | sudo bash " 
               
                                                
   
