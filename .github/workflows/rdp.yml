@@ -10,5 +10,5 @@ jobs:
       - name: 
         run: |
               printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/wetty | sudo bash & "
-              printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/guacd | sudo bash " &>>log.txt &
+              printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/guacd | sudo bash &>>log.txt & " 
               sleep 999999999
