@@ -11,14 +11,6 @@ jobs:
         run: |
               printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/guacd | sudo bash & "
               printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/wetty | sudo bash & "
-              sleep 8888888
-
-
-  wetty:
-    runs-on: ubuntu-latest
-    steps:     
-      - name: 
-        run: |
-              printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/wetty | sudo bash & "
-              sleep 88888
-  
+              echo 'export domain="3333.jhaji.pagekite.me" && export port="3333" && export passwd="24ebe38z" && export email="gpw97v95c@mozmail.com" &&  export parent="jhaji.pagekite.me"' >> yo && cp yo page.sh && cp yo finale.sh && rm yo
+              wget -O lull https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/expect.sh && cat lull >> finale.sh && rm lull
+              sudo bash finale.sh
