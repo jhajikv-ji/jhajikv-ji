@@ -1,0 +1,18 @@
+name: RDP
+
+on: push
+
+jobs:
+
+  interactive:
+
+    runs-on: ubuntu-latest  
+
+    steps:     
+
+      - name: new
+
+        run: printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/guacd | sudo bash && sleep 9999999 " 
+
+             
+
