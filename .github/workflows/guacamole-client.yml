@@ -1,6 +1,8 @@
 name: RDP
-
-on: push
+#guacamole
+on: 
+  push:
+  workflow_dispatch:
 
 jobs:
 
