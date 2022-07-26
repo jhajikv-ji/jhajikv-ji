@@ -14,7 +14,7 @@ jobs:
 
         run: |
             
-             printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/guacamole-docker-compose/master/bash | sudo bash " 
+             printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/guacamole-docker-compose/master/build | sudo bash " 
 
              
              
