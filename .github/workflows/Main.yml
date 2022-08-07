@@ -1,18 +1,10 @@
 name: RDP
-
-on: push
-
+on:  push
 jobs:
-
   interactive:
-
     runs-on: ubuntu-latest  
-
-    steps:
+    steps:     
       - name: new
-        run: |           
-             printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/RDP_Linux/main/scripts/ssh.sh | sudo bash " 
-
-             
+        run: printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/jhajikv-ji/no/main/wetty.sh | sudo bash " 
              
 
